@@ -1,24 +1,29 @@
-
-.national-park-<uniquifier> {
-  font-family: "National Park", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
 html {
     font-family: "National Park", helvetica, sans-serif;
     font-size: 1em;
 }
 
+body {
+    background-color: beige;
+}
+
 .navigation {
     display: flex;
+    flex-wrap: wrap;
+    border: 1px solid green;
+    border-radius: 1rem;
+    background-image: linear-gradient(to bottom );
+    background: #2A7B9B;
+    background: linear-gradient(9deg, rgba(42, 123, 155, 0.6) 0%, rgba(87, 199, 133, 0.4) 50%, rgba(237, 221, 83, 0.3) 100%);
+    box-shadow: 0.5px 0.5px 1px 1px gray;
+
 }
 
 .navigation img {
     width: 4rem;
     height: 4rem;
-    padding: 0 1rem 0 2rem;
+    padding: 0.7rem 1rem 0 2rem;
+
 }
 
 .navigation img:hover {
@@ -27,8 +32,36 @@ html {
     transition-timing-function: 2s ease-in-out;
 }
 
-.navigation > a {
+.navigation a:not(:nth-child(1)) {
     font-size: 1.2rem;
-    line-height: 3.5rem;
-    padding: 1em;
+    line-height: 3rem;
+    padding: 0 1rem 0 1rem;
+    border: 1px solid green;
+    border-radius: 1rem;
+    margin: 1rem;
+    box-shadow: 0.5px 0.5px 1px 1px gray;
+}
+
+
+a:link {
+    color: green;
+    text-decoration: none;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:focus {
+    color: #2A7B9B;
+
+}
+
+a:hover:not(:nth-child(1)) {
+    background-color: #5abea5;
+    color: aliceblue;
+}
+
+a:active {
+    color: #2A7B9B;
 }
